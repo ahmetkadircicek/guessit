@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*
+body{
+  background-color: black;
+}
+*/
+.submitbutton{
+  width: 1px;
+  opacity: 0;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guess{
+  font-family: "Teko";
+  font-size: 150px;
+  color: #FFFF;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.guess:hover{
+  transform: scale(1.02);
+  transition: 0.85s;
+}
+
+.lets{
+  font-family: "Pacifico";
+  font-size: 30px;
+  right: -38px;
+  top: -50px;
+  transform: rotate(-40deg);
+  color: rgb(16, 38, 65);
+  z-index: 4;
+  position: relative;
+  cursor: pointer;
+}
+
+.lets:hover{
+  transform: rotate(320deg);
+  transition: 0.85s;
+}
+
+.tryagain{
+  font-family: "Pacifico";
+  font-size: 30px;
+  color: #FFFF;
+  padding-top: 180px;
+  padding-left: 180px;
+  cursor: pointer;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.result{
+  font-family: "Teko";
+  font-size: 30px;
+  color: #FFFF;
+  padding-left: 60px;
+  cursor: pointer;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.result:hover{
+  transform: scale(1.02);
+  transition: 0.85s;
+}
+
+.pick{
+  font-family: "Teko";
+  font-size: 40px;
+  color: #FFFF;
+  padding-left: 60px;
+  cursor: pointer;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.pick:hover{
+  transform: scale(1.02);
+  transition: 0.85s;
+}
+
+.grid{
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+.guessfield{
+  margin-left: 60px;
+  padding-left: 23%;
+  border-radius: 8px;
+  background-color: #FFFF;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.guessfield:hover{
+  transform: scale(1.1);
+  background-color: #FFFF;
+  transition: 0.85s;
+}
+
+.guessfield:focus{
+  border: 2px solid rgba(16, 38, 65, 0.3);
+  background-color: #fff;
+  transition: 0.85s;
+}
+
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
